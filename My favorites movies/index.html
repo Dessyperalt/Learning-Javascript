@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js">
-    </script>
-    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <title>Movies</title>
 
 </head>
 
@@ -19,22 +19,19 @@
         <div class="d-flex justify-content-center">
             <h1>My favorites movies</h1>
         </div>
-        <form>
-            <div class="form-group row">
-                <label for="title" class="col-form-label font-weight-bold">Title</label>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Movie title" id="title">
-                </div>
-                <label for="rating" class="col-form-label font-weight-bold">Rating</label>
-                <div class="col">
-                    <input type="number" class="form-control" placeholder="Rating from 0 to 10" id="rating">
-                </div>
-                <div class="col">
-                    <button type="submit" class="">Add a movie</button>
-                </div>
+        <div class="form-group row">
+            <label for="title" class="col-form-label font-weight-bold">Title</label>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Movie title" id="title">
             </div>
-        </form>
-
+            <label for="rating" class="col-form-label font-weight-bold">Rating</label>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Rating from 0 to 10" id="rating">
+            </div>
+            <div class="col">
+                <button onclick = "createMovie()" class="">Add a movie</button>
+            </div>
+        </div>
         <div>
             <table class="table table-striped table-bordered">
                 <thead>
