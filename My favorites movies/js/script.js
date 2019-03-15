@@ -1,7 +1,5 @@
 function createMovie(){
 
-    console.log($("#title").text());
-    console.log($("#rating").val());
     var $bodyrow =  $("<tr>");
     $("tbody").append($bodyrow);
 
@@ -21,9 +19,11 @@ function createMovie(){
     $tdButton.append($deleteButton);
     $bodyrow.append($tdButton);
 
+    $("#title").val('');
+    $("#rating").val('');
+
     $deleteButton.on("click", function(e)
     {
-
+        $bodyrow.remove();
     });
 }
-
