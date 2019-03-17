@@ -1,0 +1,30 @@
+body
+{
+    background-color: #212121;
+}
+
+.btn-orange
+{
+    color: #fff; 
+    background-color: #f25a39;
+    border-color: #f25a39;  
+}
+
+.btn-orange, .btn-secondary, .search
+{
+    margin: .5%;
+}
+
+h1
+{
+    margin: 2%;
+    color: #FFF;
+}
+
+.search
+{
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: #495057;
+    padding: 1%;
+}
