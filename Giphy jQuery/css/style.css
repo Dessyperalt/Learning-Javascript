@@ -15,10 +15,33 @@ body
     margin: .5%;
 }
 
+.container
+{
+    margin-bottom: 20px;
+}
+
+.giphybody
+{
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+
 h1
 {
     margin: 2%;
     color: #FFF;
+}
+
+.imageGiphy
+{
+    column-gap: 1.5em; 
+    margin-bottom: 20px; 
+}
+
+.imageGiphy img
+{
+    width: 100%;
 }
 
 .search
